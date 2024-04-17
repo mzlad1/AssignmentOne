@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyButtonStyle"
+        android:onClick="OpenAboutUs"
+        android:text="About Us"
+        android:paddingBottom="3dp"
+        android:translationY="-90dp"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:translationY="-60dp"
+        app:srcCompat="@drawable/wel" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="356dp"
+        android:layout_height="73dp"
+        android:background="@drawable/textview"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:translationY="-50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@style/MySpinnerStyle"
+        android:layout_width="248dp"
+        android:layout_height="38dp"
+        android:textColor="#AA00FF"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyButtonStyle"
+        android:onClick="OpenActivityTwo"
+        android:text="Let Begin"
+        android:paddingBottom="3dp"
+        android:translationY="20dp"
+        android:visibility="invisible"
+
+
+        />
+
+
+
+</LinearLayout>
